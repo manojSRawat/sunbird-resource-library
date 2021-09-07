@@ -1,17 +1,15 @@
-
 import { Inject, Injectable } from '@angular/core';
 import { Observable, of, throwError} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { map, mergeMap } from 'rxjs/operators';
 import { QuestionCursor } from '@project-sunbird/sunbird-quml-player-v8';
-import { EditorCursor } from 'collection-editor-library';
 import * as _ from 'lodash-es';
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class EditorCursorImplementationService implements QuestionCursor, EditorCursor {
+export class EditorCursorImplementationService implements QuestionCursor {
   public questionMap =  new Map();
   constructor(private http: HttpClient) {} // @Inject(HttpClient)
 
@@ -35,14 +33,6 @@ export class EditorCursorImplementationService implements QuestionCursor, Editor
 
   getQuestionData(questionId) {
     return this.questionMap.get(_.first(_.castArray(questionId))) || undefined;
-  }
-
-  setQuestionMap(key, value) {
-    this.questionMap.set(key, value);
-  }
-
-  clearQuestionMap() {
-    this.questionMap.clear();
   }
 
   private post(questionIds): Observable<any> {
