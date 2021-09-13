@@ -1,5 +1,5 @@
 {
-  "name": "sunbird-collection-editor",
+  "name": "sunbird-resource-library",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,9 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-lib": "ng build collection-editor-library && node assets-copy.js",
-    "build-lib:prod": " ng build collection-editor-library --prod=true && node assets-copy.js",
-    "test-coverage": "ng test collection-editor-library --code-coverage=true --watch=false --sourceMap=false --browsers=ChromeHeadless"
+    "build-lib": "ng build resource-library && node assets-copy.js",
+    "build-lib:prod": " ng build resource-library --prod=true && node assets-copy.js",
+    "test-coverage": "ng test resource-library --code-coverage=true --watch=false --sourceMap=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {

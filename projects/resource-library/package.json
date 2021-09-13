@@ -1,5 +1,5 @@
 {
-  "name": "@project-sunbird/sunbird-collection-editor",
+  "name": "@project-sunbird/sunbird-resource-library",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "~9.1.13",

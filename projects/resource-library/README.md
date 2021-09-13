@@ -1,23 +1,21 @@
-# CourseEditorLibrary
-
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+# Resource Library
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project collection-editor-library` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project collection-editor-library`.
-> Note: Don't forget to add `--project collection-editor-library` or else it will be added to the default project in your `angular.json` file. 
+Run `ng generate component component-name --project resource-library` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project resource-library`.
+> Note: Don't forget to add `--project resource-library` or else it will be added to the default project in your `angular.json` file. 
 
 ## Build
 
-Run `ng build collection-editor-library` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build resource-library` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build collection-editor-library`, go to the dist folder `cd dist/collection-editor-library` and run `npm publish`.
+After building your library with `ng build resource-library`, go to the dist folder `cd dist/resource-library` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test collection-editor-library` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test resource-library` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 

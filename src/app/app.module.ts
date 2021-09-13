@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { CollectionEditorLibraryModule, EditorCursor } from 'collection-editor-library';
+import { ResourceLibraryComponent, EditorCursor } from 'resource-library';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { QuestionCursor } from '@project-sunbird/sunbird-quml-player-v9';
@@ -13,7 +13,7 @@ import { EditorCursorImplementationService } from './editor-cursor-implementatio
   ],
   imports: [
     BrowserModule,
-    CollectionEditorLibraryModule,
+    ResourceLibraryComponent,
     BrowserAnimationsModule,
     RouterModule.forRoot([])
   ],

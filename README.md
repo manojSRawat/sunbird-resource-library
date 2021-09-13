@@ -81,13 +81,13 @@ For existing apps, follow these steps to begin using .
 
 Add to `NgModule` for the application in which you want to use:
 
-    import { CollectionEditorLibraryModule } from 'sunbird-collection-editor-v9';
+    import { ResourceLibraryModule } from 'sunbird-collection-editor-v9';
 
 
     @NgModule({
 	    ...
 	    imports: [
-            CollectionEditorLibraryModule,
+            ResourceLibraryModule,
 	    ...
     })
 

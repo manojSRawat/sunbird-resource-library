@@ -1,8 +1,8 @@
 const fs = require('fs-extra');
 (async () => {
     try {
-        const dest = "dist/collection-editor-library/lib/assets/";
-        var source = "projects/collection-editor-library/src/lib/assets";
+        const dest = "dist/resource-library/lib/assets/";
+        var source = "projects/resource-library/src/lib/assets";
         const isAssetsExists = await fs.pathExists(dest)
 
         if (isAssetsExists) {
