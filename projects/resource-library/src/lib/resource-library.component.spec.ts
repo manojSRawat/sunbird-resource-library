@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { CollectionEditorLibraryComponent } from './collection-editor-library.component';
+import { ResourceLibraryComponent } from './resource-library.component';
 
 describe('CollectionEditorLibraryComponent', () => {
-  let component: CollectionEditorLibraryComponent;
-  let fixture: ComponentFixture<CollectionEditorLibraryComponent>;
+  let component: ResourceLibraryComponent;
+  let fixture: ComponentFixture<ResourceLibraryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CollectionEditorLibraryComponent ]
+      declarations: [ ResourceLibraryComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CollectionEditorLibraryComponent);
+    fixture = TestBed.createComponent(ResourceLibraryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

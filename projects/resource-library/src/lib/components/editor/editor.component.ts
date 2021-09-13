@@ -16,7 +16,7 @@ import * as _ from 'lodash-es';
 import { ConfigService } from '../../services/config/config.service';
 import { DialcodeService } from '../../services/dialcode/dialcode.service';
 @Component({
-  selector: 'lib-editor',
+  selector: 'resource-lib-editor',
   templateUrl: './editor.component.html',
   styleUrls: ['./editor.component.scss'],
   encapsulation: ViewEncapsulation.None,
