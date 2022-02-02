@@ -118,12 +118,13 @@ export class LibraryComponent implements OnInit, AfterViewInit, OnDestroy {
 
     fetchContentList(filters?, query?) {
         filters = filters || this.defaultFilters;
+        const primaryCategories = _.map(_.uniqBy(this.libraryInput.targetPrimaryCategories, 'name'), 'name');
         const option = {
             url: 'composite/v3/search',
             data: {
                 request: {
                     query: query || '',
-                    filters: _.pickBy({...filters, ...{status: ['Live', 'Approved']}}),
+                    filters: _.pickBy({...filters, ...{primaryCategory: primaryCategories, status: ['Live', 'Approved']}}),
                     sort_by: {
                         lastUpdatedOn: 'desc'
                     }
